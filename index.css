@@ -1,0 +1,74 @@
+/* Reset default css */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+body {
+  overflow-x: hidden;
+}
+li {
+  list-style: none;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/* Header css */
+header {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  background-color: white;
+  height: 5rem;
+  padding: 0 3%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-box {
+  height: 3rem;
+}
+.logo {
+  height: 100%;
+}
+
+/* Hamburger */
+input[type="checkbox"] {
+  display: none;
+}
+.hamburger {
+  display: none;
+}
+
+.nav {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* Dropdown css */
+.dropdown-link {
+  position: relative;
+}
+.dropdown {
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  background-color: white;
+  padding: 1rem;
+  position: absolute;
+  display: none;
+}
+.dropdown li + li {
+  margin-top: 10px;
+}
+.dropdown-link:hover {
+  .dropdown {
+    display: block;
+  }
+}
